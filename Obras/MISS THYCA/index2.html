@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MISS THYCA</title>
+  <link rel="stylesheet" href="obra.css" />
+</head>
+<body>
+  <a href="../../index.html" class="volver-link">← Volver a la galería</a>
+  <div class="contenedor">
+    <h1>MISS THYCA</h1>
+
+    <img src="2.jpg" alt="MISS THYCA" class="imagen-obra" id="imagen-obra" />
+<!-- Texto visible para el usuario -->
+<div class="descripcion-visible" style="max-width: 600px; margin: 20px auto; font-size: 16px; color: #333;">
+  El autor utiliza una repetición rítmica de formas cónicas invertidas de gran tamaño, dominadas por el color rojo intenso, para crear una composición impactante y direccional. Las figuras principales contrastan fuertemente con el fondo blanco, lo que activa el principio de figura-fondo de la Gestalt y otorga un peso visual inmediato a las estructuras suspendidas. La semejanza entre las formas y su alineación horizontal generan unidad y patrón, mientras que la orientación descendente de los conos guía la mirada hacia abajo con fuerza visual. Las formas geométricas grises flotantes añaden tensión y profundidad espacial, rompiendo la simetría y aportando ritmo visual. El contraste entre textura densa (en las formas superiores) y vacío (en el fondo) refuerza el equilibrio compositivo a través del contraste y la distribución del peso visual.
+</div>
+     <p id="promptBase" style="display: none;">
+     Formas rojas suspendidas, textura orgánica, fondo blanco vacío con sombras. Composición simétrica y surrealista 
+    </p>
+
+    <!-- Cuadros laterales de información -->
+    <div class="info-lateral">
+      <div class="cuadro-info">
+        🖼 <strong>¿Te diste cuenta…?</strong><br><br>
+        🔺 ¿Están cayendo o flotando? Estas formas rojas en punta parecen desafiar la gravedad, como si fueran estructuras suspendidas o raíces que cuelgan de un techo invisible.
+      </div>
+      <div class="cuadro-info">
+        🧠 ¿Orgánico o artificial? Aunque parecen hechos de carne o pétalos, su simetría y repetición casi las convierten en artefactos alienígenas o arquitectónicos.
+      </div>
+      <div class="cuadro-info">
+        🔍 ¡Mira de cerca! La textura está minuciosamente detallada, cada línea y sombra ha sido trabajada con precisión casi quirúrgica.
+      </div>
+      <div class="cuadro-info">
+        🎯 Las figuras grises rectangulares que flotan abajo parecen simples, pero contrastan fuertemente con las formas complejas de arriba. ¿Qué papel juegan?
+      </div>
+      <div class="cuadro-info">
+        🌀 ¿Te incomoda o te hipnotiza? Este tipo de imagen genera una sensación ambigua: ¿estás frente a una amenaza o ante algo sublime?
+      </div>
+    </div>
+
+    <!-- Área IA -->
+    <label for="userPrompt">Describe cómo deseas reimaginar esta obra:</label><br>
+    <input type="text" id="userPrompt" placeholder="Ej: con luces de neón y estilo futurista" style="width: 80%; max-width: 500px; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;">
+
+    <button id="btn-reimaginar">✨ IA: Reimaginar</button>
+
+    <div id="imageContainer" style="display:none; text-align:center; margin-top:30px;">
+      <h3>🎨 Imagen generada por IA:</h3>
+      <img id="imageResult" class="imagen-ia" />
+      <br><br>
+      <button onclick="downloadImage()">⬇ Descargar imagen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

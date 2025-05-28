@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MEDITACION</title>
+  <link rel="stylesheet" href="obra.css" />
+</head>
+<body>
+  <a href="../../index.html" class="volver-link">← Volver a la galería</a>
+  <div class="contenedor">
+    <h1>MEDITACION</h1>
+
+    <img src="4.jpg" alt="MEDITACION" class="imagen-obra" id="imagen-obra" />
+
+    <!-- Texto visible para el usuario -->
+<div class="descripcion-visible" style="max-width: 600px; margin: 20px auto; font-size: 16px; color: #333;">
+  En esta obra, la figura central se compone de formas orgánicas de bordes blandos, generando una sensación de fluidez y ambigüedad que se acentúa por la textura pictórica densa. El principio de figura-fondo se establece con nitidez gracias al uso del contraste cromático entre la figura en tonos ocres y marrones y un fondo dividido en tres campos de color: blanco, rojo-anaranjado y azul, que introducen profundidad y tensión espacial. El principio de continuidad guía la mirada a través de las curvas de la figura, mientras que la yuxtaposición de planos cálidos y fríos crea un equilibrio visual dinámico. La composición se organiza en torno a un centro de masa bien definido, con una proporción dominante de la figura respecto al fondo, lo que refuerza su protagonismo y estabilidad en el campo visual.
+</div>
+     <p id="promptBase" style="display: none;">
+      Fondo dividido en dos partes azul profundo abajo, rojo cálido y beige arriba. Figura abstracta central con textura gruesa y formas curvas, pintado en oleo sobre lienzo en dos Dimensiones  
+    </p>
+
+    <!-- Cuadros laterales de información -->
+    <div class="info-lateral">
+      <div class="cuadro-info">
+        🖼 <strong>¿Te diste cuenta…?</strong><br><br>
+        🪑 ¿Figura humana o escultura viva? Muchos ven una silueta sentada, como si estuviera meditando o descansando. ¡Otros ven algo completamente distinto!
+      </div>
+      <div class="cuadro-info">
+        🎨 La textura es tan espesa que casi puedes “sentirla” con los ojos. ¡Este efecto se logra aplicando capas gruesas de pintura con espátula!
+      </div>
+      <div class="cuadro-info">
+        🌅 El fondo parece dividirse en dos mundos: uno cálido como un amanecer y otro frío y sereno como el mar. ¿Crees que influye en la emoción de la figura?
+      </div>
+      <div class="cuadro-info">
+        🧠 Este estilo recuerda al cubismo y al surrealismo, fusionando formas fragmentadas con una atmósfera introspectiva. ¿Notas el equilibrio entre cuerpo y vacío?
+      </div>
+      <div class="cuadro-info">
+        🔥 El rojo y amarillo detrás podrían sugerir fuego, pasión o energía interior. ¿Y si lo que vemos es un “yo” interior en transformación?
+      </div>
+    </div>
+
+    <!-- Área IA -->
+    <label for="userPrompt">Describe cómo deseas reimaginar esta obra:</label><br>
+    <input type="text" id="userPrompt" placeholder="Ej: con luces de neón y estilo futurista" style="width: 80%; max-width: 500px; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;">
+
+    <button id="btn-reimaginar">✨ IA: Reimaginar</button>
+
+    <div id="imageContainer" style="display:none; text-align:center; margin-top:30px;">
+      <h3>🎨 Imagen generada por IA:</h3>
+      <img id="imageResult" class="imagen-ia" />
+      <br><br>
+      <button onclick="downloadImage()">⬇ Descargar imagen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

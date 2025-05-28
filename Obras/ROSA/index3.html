@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROSA</title>
+  <link rel="stylesheet" href="obra.css" />
+</head>
+<body>
+  <a href="../../index.html" class="volver-link">← Volver a la galería</a>
+  <div class="contenedor">
+    <h1>ROSA</h1>
+
+    <img src="3.jpg" alt="ROSA" class="imagen-obra" id="imagen-obra" />
+    
+    <!-- Texto visible para el usuario -->
+<div class="descripcion-visible" style="max-width: 600px; margin: 20px auto; font-size: 16px; color: #333;">
+  En esta obra, la figura central domina verticalmente el encuadre y está construida con formas orgánicas de bordes suaves y textura densa, generando pregnancia visual por su simplicidad y continuidad. El contraste cromático entre los tonos cálidos de la figura (naranjas y rojos) y el fondo bicolor —una franja inferior roja texturada y una superior clara con trazos gestuales— refuerza el principio de figura-fondo. El equilibrio visual se logra mediante una simetría axial aproximada, y la continuidad ascendente de la figura guía la mirada desde la base verde hacia la parte superior, que culmina en dos formas redondeadas que se funden. El uso del color, la proporción vertical y la direccionalidad refuerzan la jerarquía visual y la unidad compositiva.
+</div>
+     <p id="promptBase" style="display: none;">
+     Fondo dividido por la mitad rojo texturizado abajo, blanco texturizado arriba, base verde y figuras fusionadas y pintada en oleo sobre lienzo 
+    </p>
+
+    <!-- Cuadros informativos -->
+    <div class="info-lateral">
+      <div class="cuadro-info">
+        🖼 <strong>¿Te diste cuenta…?</strong><br><br>
+        🌱 ¿Una planta o dos cuerpos? La forma central puede parecer una flor retorcida… pero también puede interpretarse como dos figuras humanas abrazadas. ¿Lo ves?
+      </div>
+      <div class="cuadro-info">
+        💃🕺 Movimiento en la quietud: La forma parece girar sobre sí misma, como si estuviera danzando. El trazo grueso y texturizado potencia esa sensación de vida.
+      </div>
+      <div class="cuadro-info">
+        🎨 Rojo profundo, verde vital: El contraste entre el rojo intenso del fondo y el verde en la base refuerza la dualidad entre pasión y crecimiento, entre tierra y fuego.
+      </div>
+      <div class="cuadro-info">
+        🖌 Textura que se siente: La técnica empastada (con mucha carga de pintura) da una sensación táctil. Podrías imaginarte cómo se siente al tocarlo.
+      </div>
+      <div class="cuadro-info">
+        ❤ ¿Es amor? ¿Es dolor? La unión de las figuras puede transmitir ternura o fusión, pero también puede evocar pérdida o lucha. Todo depende del estado de ánimo del espectador.
+      </div>
+    </div>
+
+    <!-- Área IA -->
+    <label for="userPrompt">Describe cómo deseas reimaginar esta obra:</label><br>
+    <input type="text" id="userPrompt" placeholder="Ej: con luces de neón y estilo futurista" style="width: 80%; max-width: 500px; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;">
+
+    <button id="btn-reimaginar">✨ IA: Reimaginar</button>
+
+    <div id="imageContainer" style="display:none; text-align:center; margin-top:30px;">
+      <h3>🎨 Imagen generada por IA:</h3>
+      <img id="imageResult" class="imagen-ia" />
+      <br><br>
+      <button onclick="downloadImage()">⬇ Descargar imagen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

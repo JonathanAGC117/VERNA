@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIRENA</title>
+  <link rel="stylesheet" href="obra.css" />
+</head>
+<body>
+  <a href="../../index.html" class="volver-link">← Volver a la galería</a>
+  <div class="contenedor">
+    <h1>Sirena</h1>
+
+    <img src="1.jpg" alt="Sirena" class="imagen-obra" id="imagen-obra" />
+<!-- Texto visible para el usuario -->
+<div class="descripcion-visible" style="max-width: 600px; margin: 20px auto; font-size: 16px; color: #333;">
+  El autor emplea formas orgánicas y blandas que evocan fluidez y ambigüedad, reforzadas por la ausencia de líneas duras y por una textura suave y difusa. La figura central, de tamaño dominante y colocada en el eje vertical de la composición, se recorta claramente del fondo gracias al contraste cromático entre los tonos fríos (azules y grises) de la figura y los cálidos (ocres y naranjas) del entorno. Se utiliza el principio de figura-fondo de la Gestalt para otorgar protagonismo a la forma, mientras que la semejanza y la continuidad en las curvas conducen la mirada de manera fluida de la base al vértice. La composición está equilibrada por masas visuales contrastantes en temperatura y dirección: un plano vertical luminoso a la derecha compensa la espacialidad abierta a la izquierda, logrando una tensión visual que equilibra la obra sin recurrir a simetría.
+</div>
+     <p id="promptBase" style="display: none;">
+      Figura abstracta fluida con volumen escultórico. Fondo con degradado azul, beige y naranja. Composición surrealista, atmósfera calma y misteriosa hecho con pintura en un lienzo y en dos dimensiones 
+    </p>
+
+    <!-- Cuadros informativos -->
+    <div class="info-lateral">
+      <div class="cuadro-info">
+        🖼 <strong>¿Te diste cuenta…?</strong><br><br>
+        🧊 Sólido… pero líquido: La figura central parece fundirse con el suelo como si fuera de cera o de agua, pero mantiene una forma sólida. ¿Estamos viendo una escultura o un ser?
+      </div>
+      <div class="cuadro-info">
+        👥 Dos seres fusionados: La silueta da la impresión de dos figuras abrazadas o en conexión íntima. Un momento detenido en el tiempo.
+      </div>
+      <div class="cuadro-info">
+        🎨 Del frío al fuego: El fondo transita del azul gélido al naranja ardiente, como si representara un paso entre dos mundos: cielo y tierra, razón y emoción, calma y pasión.
+      </div>
+      <div class="cuadro-info">
+        📐 Un rincón misterioso: ¿Notaste la esquina oscura en el fondo? Podría ser una habitación o una puerta al vacío, dándole profundidad al espacio y sumando tensión.
+      </div>
+      <div class="cuadro-info">
+        🫧 ¿Cabezas o burbujas? Las esferas en la parte superior podrían representar cabezas humanas… o algo más abstracto. ¿Qué crees tú que son?
+      </div>
+    </div>
+
+    <!-- Área IA -->
+    <label for="userPrompt">Describe cómo deseas reimaginar esta obra:</label><br>
+    <input type="text" id="userPrompt" placeholder="Ej: con luces de neón y estilo futurista" style="width: 80%; max-width: 500px; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;">
+
+    <button id="btn-reimaginar">✨ IA: Reimaginar</button>
+
+    <div id="imageContainer" style="display:none; text-align:center; margin-top:30px;">
+      <h3>🎨 Imagen generada por IA:</h3>
+      <img id="imageResult" class="imagen-ia" />
+      <br><br>
+      <button onclick="downloadImage()">⬇ Descargar imagen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

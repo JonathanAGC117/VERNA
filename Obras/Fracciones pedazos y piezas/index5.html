@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fracciones pedazos y piezas</title>
+  <link rel="stylesheet" href="obra.css" />
+</head>
+<body>
+  <a href="../../index.html" class="volver-link">← Volver a la galería</a>
+
+  <div class="contenedor">
+    <h1>Fracciones pedazos y piezas</h1>
+
+    <img src="5.jpg" alt="Fracciones pedazos y piezas" class="imagen-obra" id="imagen-obra" />
+
+    <!-- Texto visible para el usuario -->
+<div class="descripcion-visible" style="max-width: 600px; margin: 20px auto; font-size: 16px; color: #333;">
+  En esta obra, el autor organiza el plano mediante una estructura geométrica basada en líneas finas de contorno blanco que delimitan figuras simples rectángulos, cuadrados y líneas anguladas sobre una superficie dominada por el rojo y el azul. El principio de pregnancia de la Gestalt se hace evidente en la simplificación formal y la claridad de los elementos, que, a pesar de la abstracción, resultan fácilmente distinguibles. El uso del color crea un fuerte contraste entre el rojo cálido y el azul oscuro, estableciendo un equilibrio visual entre masas planas. La división vertical del plano sugiere un ritmo compositivo pausado, reforzado por la simetría parcial entre los elementos. La jerarquía visual está determinada por el color y el encuadre: el gran bloque azul en la izquierda ancla el peso visual, mientras que las líneas blancas guían el recorrido ocular hacia la derecha, donde una forma curva rompe la rigidez del conjunto y activa la tensión compositiva.
+</div>
+     <p id="promptBase" style="display: none;">
+      Fondo pintado verticalmente mitad azul y mitad rojo, con siluetas de borde blanco planas hechas con tiza utilizando la ley del cierre 
+    </p>
+
+    <!-- Cuadros laterales de información -->
+    <div class="info-lateral">
+      <div class="cuadro-info">
+        🎨 <strong>¿Sabías que…?</strong><br><br>
+        🔺 Cada línea blanca fue trazada a mano como si el artista quisiera “dibujar con tiza” sobre un fondo vibrante. ¡Casi como si fuera un mural escolar abstracto!
+      </div>
+      <div class="cuadro-info">
+        🟥 Los colores rojo y azul marino no están ahí por casualidad: evocan una tensión entre lo emocional (rojo) y lo racional (azul oscuro). ¿Notas cómo se cruzan sin mezclarse?
+      </div>
+      <div class="cuadro-info">
+        📐 Las figuras geométricas parecen puertas, ventanas y formas arquitectónicas… ¿Podría ser un plano secreto disfrazado de arte?
+      </div>
+      <div class="cuadro-info">
+        ✋ ¿Lo ves? Una figura a la derecha se asemeja a un brazo extendido. Algunos ven un saludo, otros una barrera. ¿Y tú qué ves?
+      </div>
+      <div class="cuadro-info">
+        👀 No hay una sola perspectiva correcta: esta obra invita a moverse alrededor de ella para encontrar nuevas interpretaciones. ¡Es un rompecabezas visual sin instrucciones!
+      </div>
+    </div>
+
+    <!-- Área IA -->
+    <label for="userPrompt">Describe cómo deseas reimaginar esta obra:</label><br>
+    <input type="text" id="userPrompt" placeholder="Ej: con luces de neón y estilo futurista" style="width: 80%; max-width: 500px; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;">
+
+    <button id="btn-reimaginar">✨ IA: Reimaginar</button>
+
+    <div id="imageContainer" style="display:none; text-align:center; margin-top:30px;">
+      <h3>🎨 Imagen generada por IA:</h3>
+      <img id="imageResult" class="imagen-ia" />
+      <br><br>
+      <button onclick="downloadImage()">⬇ Descargar imagen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
